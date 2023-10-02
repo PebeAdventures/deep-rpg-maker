@@ -1,0 +1,23 @@
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Distribute components evenly across the horizontal space */
+    align-items: flex-start; /* Align components at the top of the container */
+  }
+  
+  .left-component, .right-component {
+    flex: 1; /* Make left and right components take equal space */
+  }
+  
+  .middle-component {
+    flex: 2; /* Make the middle component take double the space */
+  }
+
+  .right-component {
+    display: flex;
+    flex-direction: column; /* Stack Right Component 1 and Right Component 2 vertically */
+  }
+
+  .left-component {
+    display: flex;
+    flex-direction: column; /* Stack Right Component 1 and Right Component 2 vertically */
+  }
