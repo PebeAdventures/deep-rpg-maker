@@ -1,0 +1,9 @@
+.custom-button {
+    width: 100%; /* Make buttons expand to the full width of the container */
+    padding: 10px; /* Add padding for spacing */
+    background-color: gray;
+    border: 2px solid #ccc; /* Add a gray border around the buttons */
+    margin-bottom: 10px; /* Add margin for spacing between buttons */
+    text-align: left; /* Align text to the left within the buttons */
+    color: white; /* Text color */
+  }

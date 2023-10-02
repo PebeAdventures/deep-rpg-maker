@@ -1,0 +1,6 @@
+.icon {
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px;
+    background-color: gray;
+    margin: 5px; /* Add some margin to separate the squares */
+  }
