@@ -7,11 +7,13 @@ pipeline {
     stages {
         stage('Build frontend'){
             steps {
-                cleanWs()
-                sh 'docker stop front || docker rm front || true'
+                checkout scm
+                sh 'docker stop front || true'
+                sh 'docker rm front || true'
                 sh 'docker image rm $IMAGE || true'
                 sh 'docker builder prune -a -f'
                 sh '(cd frontend && docker build -t $IMAGE .)'
+                cleanWs();
             }   
         }
         stage('Deploy frontend'){
