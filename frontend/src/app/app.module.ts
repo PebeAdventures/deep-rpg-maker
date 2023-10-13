@@ -11,6 +11,10 @@ import { RightComponent1Component } from './right-component1/right-component1.co
 import { RightComponent2Component } from './right-component2/right-component2.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RightIconsComponent } from './right-icons/right-icons.component';
+import { FrameComponent } from './frame/frame.component';
+import { SlideOutMenuComponent } from './slide-out-menu/slide-out-menu.component';
+import { LabelComponent } from './label/label.component';
+import { PlayerNameIndicatorComponent } from './player-name-indicator/player-name-indicator.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,12 @@ import { RightIconsComponent } from './right-icons/right-icons.component';
     RightComponent1Component,
     RightComponent2Component,
     MainPageComponent,
-    RightIconsComponent
+    RightIconsComponent,
+    FrameComponent,
+    SlideOutMenuComponent,
+    LabelComponent,
+    PlayerNameIndicatorComponent,
+    PlayerNameIndicatorComponent,
   ],
   imports: [
     FormsModule,

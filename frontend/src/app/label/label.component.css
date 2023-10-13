@@ -1,0 +1,19 @@
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.label-name {
+  font-weight: bold;
+  margin-right: 10px; /* Control the spacing between name and value */
+}
+
+.label-value {
+  font-size: 12px; /* Adjust the font size as needed */
+}
