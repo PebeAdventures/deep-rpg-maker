@@ -1,0 +1,12 @@
+<div class="slide-out-menu">
+  <div class="header" (click)="toggleMenu()">
+    <div class="menu-name">{{ name }}</div>
+    <div class="status-icon" [ngClass]="{ 'active': isOpen }">
+      <!-- status icon -->
+    </div>
+  </div>
+  <div class="content" *ngIf="isOpen">
+    <!--  content -->
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.player-name-indicator {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.player-name-indicator.active {
+  background-color: #007bff; /* Change this to your desired active color */
+  color: #fff;
+}
+
+.name {
+  font-weight: bold;
+}
