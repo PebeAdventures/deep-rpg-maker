@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build frontend'){
         when {
-              expression { currentBuild.branch == 'main' }
+              expression { currentBuild.branch == '*main' }
              }
             steps {
                 checkout scm
