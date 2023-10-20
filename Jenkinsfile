@@ -5,10 +5,10 @@ pipeline {
         IMAGE = "deep-rpg:${VERSION}"
     }
     stages {
+        stage('Build frontend'){
         when {
               expression { currentBuild.branch == 'main' }
-              }
-        stage('Build frontend'){
+             }
             steps {
                 checkout scm
                 sh 'docker stop front || true'
