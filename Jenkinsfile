@@ -8,8 +8,8 @@ pipeline {
         stage('Build and Deploy frontend') {
             when {
                 expression {
-                    currentBuild.changeSets.any {
-                        it.branch == 'origin/main'
+                    currentBuild.rawBuild.references.any {
+                        it.name == 'refs/heads/main'
                     }
                 }
             }
