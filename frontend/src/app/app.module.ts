@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MiddleComponentComponent } from './middle-component/middle-component.component';
-import { LeftComponent1Component } from './left-component1/left-component1.component';
-import { LeftComponent2Component } from './left-component2/left-component2.component';
-import { RightComponent1Component } from './right-component1/right-component1.component';
-import { RightComponent2Component } from './right-component2/right-component2.component';
+import { MiddleComponentComponent } from './Screen-visual-test/test-middle-component/middle-component.component';
+import { LeftComponent1Component } from './Screen-visual-test/test-left-component1/left-component1.component';
+import { LeftComponent2Component } from './Screen-visual-test/test-left-component2/left-component2.component';
+import { RightComponent1Component } from './Screen-visual-test/test-right-component1/right-component1.component';
+import { RightComponent2Component } from './Screen-visual-test/test-right-component2/right-component2.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RightIconsComponent } from './right-icons/right-icons.component';
 import { FrameComponent } from './frame/frame.component';
@@ -29,7 +29,6 @@ import { PlayerNameIndicatorComponent } from './player-name-indicator/player-nam
     FrameComponent,
     SlideOutMenuComponent,
     LabelComponent,
-    PlayerNameIndicatorComponent,
     PlayerNameIndicatorComponent,
   ],
   imports: [

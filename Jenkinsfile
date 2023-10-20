@@ -5,6 +5,9 @@ pipeline {
         IMAGE = "deep-rpg:${VERSION}"
     }
     stages {
+        when {
+              expression { currentBuild.branch == 'main' }
+              }
         stage('Build frontend'){
             steps {
                 checkout scm
