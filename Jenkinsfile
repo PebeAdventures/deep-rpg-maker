@@ -1,6 +1,6 @@
 pipeline {
-    agent 'any'
-    environment { 
+    agent any
+    environment {
         VERSION = 'v1.0.0'
         IMAGE = "deep-rpg:${VERSION}"
     }
@@ -8,9 +8,9 @@ pipeline {
         stage('Build and Deploy frontend') {
             when {
                 expression {
-                    currentBuild.rawBuild.references.any {
-                        it.name == 'refs/heads/main'
-                    }
+                    def changeSets = currentBuild.changeSets
+                    def mainBranchChangeSet = changeSets.find { it.branch == 'origin/main' }
+                    return mainBranchChangeSet != null
                 }
             }
             steps {
@@ -21,7 +21,7 @@ pipeline {
                 sh 'docker builder prune -a -f'
                 sh '(cd frontend && docker build -t $IMAGE .)'
                 sh 'docker run --name front -p 80:80 -d $IMAGE'
-                cleanWs();
+                cleanWs()
             }
         }
     }
