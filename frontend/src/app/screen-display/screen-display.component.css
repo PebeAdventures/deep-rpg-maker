@@ -1,0 +1,22 @@
+.screen-display {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left, .middle, .right {
+  padding: 10px;
+  overflow: auto;
+}
+
+.left {
+  background-color: #f2f2f2;
+}
+
+.middle {
+  background-color: #ffffff;
+}
+
+.right {
+  background-color: #f2f2f2;
+}

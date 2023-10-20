@@ -15,6 +15,9 @@ import { FrameComponent } from './frame/frame.component';
 import { SlideOutMenuComponent } from './slide-out-menu/slide-out-menu.component';
 import { LabelComponent } from './label/label.component';
 import { PlayerNameIndicatorComponent } from './player-name-indicator/player-name-indicator.component';
+import { PlayerMainpageComponent } from './player-mainpage/player-mainpage.component';
+import { AdminMainpageComponent } from './admin-mainpage/admin-mainpage.component';
+import { ScreenDisplayComponent } from './screen-display/screen-display.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { PlayerNameIndicatorComponent } from './player-name-indicator/player-nam
     SlideOutMenuComponent,
     LabelComponent,
     PlayerNameIndicatorComponent,
+    PlayerMainpageComponent,
+    AdminMainpageComponent,
+    ScreenDisplayComponent,
   ],
   imports: [
     FormsModule,

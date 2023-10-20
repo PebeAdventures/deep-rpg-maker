@@ -1,17 +1,14 @@
-  <div class="main-container">
-    <div class="left-component">
-        <app-left-component1></app-left-component1>
-        <app-left-component2></app-left-component2>
+
+  <app-screen-display [leftFlex]="'25%'" [middleFlex]="'50%'" [rightFlex]="'25%'">
+    <div class="left-content">
+      <app-left-component1></app-left-component1>
+      <app-left-component2></app-left-component2>
     </div>
-  
-    <div class="middle-component">
+    <div class="middle-content">
       <app-middle-component></app-middle-component>
     </div>
-  
-    <div class="right-component">
-        <app-right-component1></app-right-component1>
-        <app-right-component2></app-right-component2>
+    <div class="right-content">
+      <app-right-component1></app-right-component1>
+      <app-right-component2></app-right-component2>
     </div>
-    
-  </div>
-  
+  </app-screen-display>
