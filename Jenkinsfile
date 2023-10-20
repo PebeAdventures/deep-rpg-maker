@@ -7,7 +7,11 @@ pipeline {
     stages {
         stage('Build and Deploy frontend') {
             when {
-                expression { currentBuild.branch == 'main' }
+                expression {
+                    currentBuild.changeSets.any {
+                        it.branch == 'origin/main'
+                    }
+                }
             }
             steps {
                 checkout scm
