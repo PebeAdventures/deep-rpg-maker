@@ -5,10 +5,10 @@ pipeline {
         IMAGE = "deep-rpg:${VERSION}"
     }
     stages {
-        stage('Build frontend'){
-        when {
-              expression { currentBuild.branch == '*main' }
-             }
+        stage('Build and Deploy frontend') {
+            when {
+                expression { currentBuild.branch == 'main' }
+            }
             steps {
                 checkout scm
                 sh 'docker stop front || true'
@@ -16,13 +16,9 @@ pipeline {
                 sh 'docker image rm $IMAGE || true'
                 sh 'docker builder prune -a -f'
                 sh '(cd frontend && docker build -t $IMAGE .)'
-                cleanWs();
-            }   
-        }
-        stage('Deploy frontend'){
-            steps {
                 sh 'docker run --name front -p 80:80 -d $IMAGE'
-            }   
+                cleanWs();
+            }
         }
     }
 }
