@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RightComponent2Component } from './right-component2.component';
+import { TestNicknameComponent } from './test-nickname.component';
 
-describe('RightComponent2Component', () => {
-  let component: RightComponent2Component;
-  let fixture: ComponentFixture<RightComponent2Component>;
+describe('LeftComponent1Component', () => {
+  let component: TestNicknameComponent;
+  let fixture: ComponentFixture<TestNicknameComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RightComponent2Component ]
+      declarations: [ TestNicknameComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RightComponent2Component);
+    fixture = TestBed.createComponent(TestNicknameComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

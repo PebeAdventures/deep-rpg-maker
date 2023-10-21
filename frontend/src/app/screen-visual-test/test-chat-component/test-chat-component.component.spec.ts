@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MiddleComponentComponent } from './middle-component.component';
+import { TestChatComponentComponent } from './test-chat-component.component';
 
 describe('MiddleComponentComponent', () => {
-  let component: MiddleComponentComponent;
-  let fixture: ComponentFixture<MiddleComponentComponent>;
+  let component: TestChatComponentComponent;
+  let fixture: ComponentFixture<TestChatComponentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MiddleComponentComponent ]
+      declarations: [ TestChatComponentComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MiddleComponentComponent);
+    fixture = TestBed.createComponent(TestChatComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

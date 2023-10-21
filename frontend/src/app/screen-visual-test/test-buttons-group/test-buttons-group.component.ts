@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-left-component1',
-  templateUrl: './left-component1.component.html',
-  styleUrls: ['./left-component1.component.css'],
+  selector: 'app-test-buttons-group',
+  templateUrl: './test-buttons-group.component.html',
+  styleUrls: ['./test-buttons-group.component.css']
 })
-export class LeftComponent1Component {
-  nickname: string = ''; // Initialize nickname
+export class TestButtonsGroupComponent implements OnInit {
 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
   button1Clicked() {
     // Handle button 1 click event
     // You can add your logic here
@@ -27,4 +30,5 @@ export class LeftComponent1Component {
     // Handle button 4 click event
     // You can add your logic here
   }
+
 }
