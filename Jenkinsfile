@@ -17,6 +17,11 @@ pipeline {
             }
         }
         stage('Deploy frontend'){
+            when {
+                expression {
+                    BRANCH_NAME == 'main'
+                }
+            }
             steps {
                 sh 'docker run --name front -p 80:80 -d $IMAGE'
             }
