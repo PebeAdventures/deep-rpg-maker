@@ -1,4 +1,4 @@
-FROM node:16.10.0-alpine
+FROM node:16.10.0
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
