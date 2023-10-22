@@ -10,9 +10,8 @@ pipeline {
                 docker { image 'node:16.10.0-alpine' }
             }
             steps {
-                sh 'cd frontend'
-                sh 'npm run test'
-                sh 'npm run build'
+                sh 'npm run --prefix frontend/ test'
+                sh 'npm run --prefix frontend/ build'
             }
         }
         stage('Build frontend'){
