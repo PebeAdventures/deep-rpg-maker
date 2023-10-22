@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    def npm = 'npm'
+                    def npm = 'npm --prefix frontend/'
                     sh "${npm} install"
                     sh "${npm} run test --sourceMap=false --browsers=ChromeHeadless --watch=false"
                     sh "${npm} run build"
