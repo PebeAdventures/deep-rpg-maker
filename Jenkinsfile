@@ -10,7 +10,7 @@ pipeline {
                 docker { image 'node:16.10.0-alpine' }
             }
             steps {
-                npm = 'npm run --prefix frontend/'
+                def npm = 'npm run --prefix frontend/'
                 sh '${npm} install'
                 sh '${npm} test'
                 sh '${npm} build'
