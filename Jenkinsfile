@@ -5,7 +5,22 @@ pipeline {
         IMAGE = "deep-rpg:${VERSION}"
     }
     stages {
+        stage('Test frontend'){
+            agent {
+                docker { image 'node:16.10.0-alpine' }
+            }
+            steps {
+                sh 'cd frontend'
+                sh 'npm run test'
+                sh 'npm run build'
+            }
+        }
         stage('Build frontend'){
+            when {
+                expression {
+                    BRANCH_NAME == 'main'
+                }
+            }
             steps {
                 checkout scm
                 sh 'docker stop front || true'
