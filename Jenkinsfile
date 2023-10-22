@@ -11,10 +11,10 @@ pipeline {
             }
             steps {
                 script {
-                    def npm = 'npm run --prefix frontend/'
+                    def npm = 'npm --prefix frontend/'
                     sh "${npm} install"
-                    sh "${npm} test"
-                    sh "${npm} build"
+                    sh "${npm} run test"
+                    sh "${npm} run build"
                 }
             }
         }
