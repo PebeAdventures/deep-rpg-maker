@@ -10,14 +10,16 @@ pipeline {
                 docker { image 'node:16.10.0-alpine' }
             }
             steps {
-                sh 'npm run --prefix frontend/ test'
-                sh 'npm run --prefix frontend/ build'
+                npm = 'npm run --prefix frontend/'
+                sh '${npm} install'
+                sh '${npm} test'
+                sh '${npm} build'
             }
         }
         stage('Build frontend'){
             when {
                 expression {
-                    BRANCH_NAME == 'main'
+                    currentBranchIsMain()
                 }
             }
             steps {
@@ -33,7 +35,7 @@ pipeline {
         stage('Deploy frontend'){
             when {
                 expression {
-                    BRANCH_NAME == 'main'
+                    currentBranchIsMain()
                 }
             }
             steps {
@@ -41,4 +43,8 @@ pipeline {
             }
         }
     }
+}
+
+def currentBranchIsMain(){
+    return BRANCH_NAME == 'main'
 }
