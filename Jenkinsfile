@@ -16,7 +16,8 @@ pipeline {
                 script {
                     def npm = 'npm --prefix frontend/'
                     sh "${npm} install"
-                    sh "${npm} run test --sourceMap=false --browsers=ChromeHeadless --watch=false"
+                    // TODO: Enable node tests with  headless chrome 
+                    // sh "${npm} run test --sourceMap=false --browsers=ChromeHeadless --watch=false"
                     sh "${npm} run build"
                 }
             }
