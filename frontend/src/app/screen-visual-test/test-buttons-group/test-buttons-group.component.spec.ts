@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeftComponent2Component } from './left-component2.component';
+import { TestButtonsGroupComponent } from './test-buttons-group.component';
 
-describe('LeftComponent2Component', () => {
-  let component: LeftComponent2Component;
-  let fixture: ComponentFixture<LeftComponent2Component>;
+describe('RightComponent1Component', () => {
+  let component: TestButtonsGroupComponent;
+  let fixture: ComponentFixture<TestButtonsGroupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LeftComponent2Component ]
+      declarations: [ TestButtonsGroupComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LeftComponent2Component);
+    fixture = TestBed.createComponent(TestButtonsGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

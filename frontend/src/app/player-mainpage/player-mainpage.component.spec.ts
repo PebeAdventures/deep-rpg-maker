@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RightComponent2Component } from './right-component2.component';
+import { PlayerMainpageComponent } from './player-mainpage.component';
 
-describe('RightComponent2Component', () => {
-  let component: RightComponent2Component;
-  let fixture: ComponentFixture<RightComponent2Component>;
+describe('PlayerMainpageComponent', () => {
+  let component: PlayerMainpageComponent;
+  let fixture: ComponentFixture<PlayerMainpageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RightComponent2Component ]
+      declarations: [ PlayerMainpageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RightComponent2Component);
+    fixture = TestBed.createComponent(PlayerMainpageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -4,33 +4,34 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MiddleComponentComponent } from './middle-component/middle-component.component';
-import { LeftComponent1Component } from './left-component1/left-component1.component';
-import { LeftComponent2Component } from './left-component2/left-component2.component';
-import { RightComponent1Component } from './right-component1/right-component1.component';
-import { RightComponent2Component } from './right-component2/right-component2.component';
+import { TestChatComponentComponent } from './screen-visual-test/test-chat-component/test-chat-component.component';
+import { TestNicknameComponent } from './screen-visual-test/test-nickname/test-nickname.component';
+import { TestSlideoutMenuComponent } from './screen-visual-test/test-slideout-menu/test-slideout-menu.component';
+import { TestButtonsGroupComponent } from './screen-visual-test/test-buttons-group/test-buttons-group.component';
 import { MainPageComponent } from './main-page/main-page.component';
-import { RightIconsComponent } from './right-icons/right-icons.component';
 import { FrameComponent } from './frame/frame.component';
 import { SlideOutMenuComponent } from './slide-out-menu/slide-out-menu.component';
 import { LabelComponent } from './label/label.component';
 import { PlayerNameIndicatorComponent } from './player-name-indicator/player-name-indicator.component';
+import { PlayerMainpageComponent } from './player-mainpage/player-mainpage.component';
+import { AdminMainpageComponent } from './admin-mainpage/admin-mainpage.component';
+import { ScreenDisplayComponent } from './screen-display/screen-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiddleComponentComponent,
-    LeftComponent1Component,
-    LeftComponent2Component,
-    RightComponent1Component,
-    RightComponent2Component,
+    TestChatComponentComponent,
+    TestNicknameComponent,
+    TestSlideoutMenuComponent,
+    TestButtonsGroupComponent,
     MainPageComponent,
-    RightIconsComponent,
     FrameComponent,
     SlideOutMenuComponent,
     LabelComponent,
     PlayerNameIndicatorComponent,
-    PlayerNameIndicatorComponent,
+    PlayerMainpageComponent,
+    AdminMainpageComponent,
+    ScreenDisplayComponent,
   ],
   imports: [
     FormsModule,

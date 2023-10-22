@@ -1,0 +1,11 @@
+<div class="screen-display">
+  <div class="left" [style.flex]="leftFlex">
+    <ng-content select=".left-content"></ng-content>
+  </div>
+  <div class="middle" [style.flex]="middleFlex">
+    <ng-content select=".middle-content"></ng-content>
+  </div>
+  <div class="right" [style.flex]="rightFlex">
+    <ng-content select=".right-content"></ng-content>
+  </div>
+</div>

@@ -1,17 +1,27 @@
-  <div class="main-container">
-    <div class="left-component">
-        <app-left-component1></app-left-component1>
-        <app-left-component2></app-left-component2>
+
+  <app-screen-display [leftFlex]="'25%'" [middleFlex]="'50%'" [rightFlex]="'25%'">
+    <div class="left-content">
+      <app-frame title = "right side main frame name test">
+        <app-frame title="nickname frame name test">
+      <app-test-nickname></app-test-nickname>
+        </app-frame>
+        <app-frame>
+      <app-test-slideout-menu></app-test-slideout-menu>
+        </app-frame>
+      </app-frame>
     </div>
-  
-    <div class="middle-component">
-      <app-middle-component></app-middle-component>
+    <div class="middle-content">
+      <app-frame>
+      <app-test-chat-component></app-test-chat-component>
+      <app-test-slideout-menu></app-test-slideout-menu>
+      </app-frame>
     </div>
-  
-    <div class="right-component">
-        <app-right-component1></app-right-component1>
-        <app-right-component2></app-right-component2>
+    <div class="right-content">
+      <app-test-buttons-group></app-test-buttons-group>
     </div>
-    
-  </div>
-  
+    <div class="right-content">
+      <app-slide-out-menu name="group buttons title test in S-O menu">
+      <app-test-buttons-group></app-test-buttons-group>
+      </app-slide-out-menu>
+    </div>
+  </app-screen-display>

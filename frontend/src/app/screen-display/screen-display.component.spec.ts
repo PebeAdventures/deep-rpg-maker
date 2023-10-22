@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RightIconsComponent } from './right-icons.component';
+import { ScreenDisplayComponent } from './screen-display.component';
 
-describe('RightIconsComponent', () => {
-  let component: RightIconsComponent;
-  let fixture: ComponentFixture<RightIconsComponent>;
+describe('ScreenDisplayComponent', () => {
+  let component: ScreenDisplayComponent;
+  let fixture: ComponentFixture<ScreenDisplayComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RightIconsComponent ]
+      declarations: [ ScreenDisplayComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RightIconsComponent);
+    fixture = TestBed.createComponent(ScreenDisplayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
