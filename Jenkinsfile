@@ -7,14 +7,14 @@ pipeline {
     stages {
         stage('Test frontend'){
             agent {
-                docker { 
+                dockerfile { 
                     filename 'node-test.Dockerfile'
                     dir 'frontend' 
                 }
             }
             steps {
                 script {
-                    def npm = 'npm --prefix frontend/'
+                    def npm = 'npm'
                     sh "${npm} install"
                     sh "${npm} run test --sourceMap=false --browsers=ChromeHeadless --watch=false"
                     sh "${npm} run build"
