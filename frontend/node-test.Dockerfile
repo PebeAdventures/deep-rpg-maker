@@ -2,6 +2,9 @@ FROM node:16.10.0-alpine
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y nodejs \
+    npm                       # note this one
 # Install Google Chrome Stable and fonts
 # Note: this installs the necessary libs to make the browser work with Puppeteer.
 RUN apt-get update && apt-get install gnupg wget -y && \
