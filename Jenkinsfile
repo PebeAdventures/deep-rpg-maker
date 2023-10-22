@@ -7,7 +7,10 @@ pipeline {
     stages {
         stage('Test frontend'){
             agent {
-                docker { image 'node:16.10.0-alpine' }
+                docker { 
+                    filename 'node-test.Dockerfile'
+                    dir 'frontend' 
+                }
             }
             steps {
                 script {
