@@ -11,5 +11,8 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+OnClick()
+{
+  console.log('testujemy przycisk!')
+}
 }
