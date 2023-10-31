@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./screen-display.component.css']
 })
 export class ScreenDisplayComponent {
-  @Input() leftFlex: string = '25%';
-  @Input() middleFlex: string = '50%';
-  @Input() rightFlex: string = '25%';
+  @Input() leftFlex?: string;
+  @Input() middleFlex?: string;
+  @Input() rightFlex?: string;
 }

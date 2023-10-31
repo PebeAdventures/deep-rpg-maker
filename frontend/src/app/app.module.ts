@@ -16,6 +16,7 @@ import { PlayerNameIndicatorComponent } from './player-name-indicator/player-nam
 import { PlayerMainpageComponent } from './player-mainpage/player-mainpage.component';
 import { AdminMainpageComponent } from './admin-mainpage/admin-mainpage.component';
 import { ScreenDisplayComponent } from './screen-display/screen-display.component';
+import { ChatWindowComponent } from './chat-window/chat-window.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ScreenDisplayComponent } from './screen-display/screen-display.componen
     PlayerMainpageComponent,
     AdminMainpageComponent,
     ScreenDisplayComponent,
+    ChatWindowComponent,
   ],
   imports: [
     FormsModule,

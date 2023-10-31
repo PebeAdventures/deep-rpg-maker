@@ -1,0 +1,21 @@
+.chat-window {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.messages {
+  height: 200px;
+  overflow: auto;
+}
+
+.message {
+  margin: 5px 0;
+}
+
+.message-user {
+  font-weight: bold;
+}
+
+.message-input {
+  margin-top: 10px;
+}
