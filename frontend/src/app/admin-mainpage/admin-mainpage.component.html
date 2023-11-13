@@ -1,1 +1,38 @@
-<p>admin-mainpage works!</p>
+<app-screen-display [leftFlex]="'15%'" [middleFlex]="'70%'" [rightFlex]="'15%'">
+    <div class="left-content">
+      <app-frame title = "right side main frame name test">
+        <app-label name="testowyName" value="wartosc"></app-label>
+        <app-frame title="nickname frame name test">
+      <app-test-nickname></app-test-nickname>
+        </app-frame>
+        <app-frame>
+      <app-test-slideout-menu></app-test-slideout-menu>
+        </app-frame>
+      </app-frame>
+    </div>
+    <div class="middle-content">
+      <app-screen-display [leftFlex]="'50%'" [rightFlex]="'50%'">
+        <div class="left-content-user">
+      <app-frame>
+        <app-chat-window [user]="'user'"></app-chat-window>
+      </app-frame>
+        </div>
+        <div class="right-content-admin">
+      <app-frame>
+        <app-chat-window [user]="'admin'"></app-chat-window>
+      </app-frame>
+        </div>
+      </app-screen-display>
+       <!-- <app-test-chat-component></app-test-chat-component>
+      <app-test-slideout-menu></app-test-slideout-menu>-->
+
+    </div>
+    <div class="right-content">
+      <app-test-buttons-group></app-test-buttons-group>
+    </div>
+    <div class="right-content">
+      <app-slide-out-menu name="group buttons title test in S-O menu">
+      <app-test-buttons-group></app-test-buttons-group>
+      </app-slide-out-menu>
+    </div>
+  </app-screen-display>
